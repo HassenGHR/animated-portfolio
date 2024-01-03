@@ -9,7 +9,7 @@ import {
   project5,
   project6,
   project7, project8, project9, project10, project11
-} from "../../../public/assets/projects/index";
+} from "../../assets/projects/index";
 
 const items = [
   {

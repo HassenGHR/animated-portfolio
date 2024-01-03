@@ -4,6 +4,10 @@ import FormPage from "./Form";
 import EarthPage from "./EarthPage";
 import { StarsCanvas } from "../canvas";
 import "./contact.scss";
+import icon1 from '../../assets/social_icons/linkedin.png'
+import icon2 from '../../assets/social_icons/github.png'
+import icon3 from '../../assets/social_icons/datacamp.svg'
+
 
 const Contact = () => {
   const isSmallScreen = window.innerWidth <= 768;
@@ -33,19 +37,19 @@ const Contact = () => {
             href="https://www.linkedin.com/in/hassen-goumghar-profile23/"
             whileHover={{ scale: 1 }}
           >
-            <img src="/linkedin.png" alt="LinkedIn" />
+            <img src= {icon1} alt="LinkedIn" />
           </motion.a>
           <motion.a
             href="https://github.com/HassenGHR"
             whileHover={{ scale: 1 }}
           >
-            <img src="/github.png" alt="GitHub" />
+            <img src={icon2} alt="GitHub" />
           </motion.a>
           <motion.a
             href="https://www.datacamp.com/portfolio/goumhassan"
             whileHover={{ scale: 1 }}
           >
-            <img src="/datacamp.svg" alt="DataCamp" />
+            <img src={icon3} alt="DataCamp" />
           </motion.a>
         </div>
             </div>

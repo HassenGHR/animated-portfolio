@@ -23,7 +23,7 @@ import {
   ai,
   dataAnalysis,
   Allprojects,
-} from "../../public/assets";
+} from "../assets/categories";
 
 export const navLinks = [
   {

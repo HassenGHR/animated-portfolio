@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./form.scss"; 
 import { motion } from "framer-motion";
+import icon1 from '../../assets/social_icons/linkedin.png'
+import icon2 from '../../assets/social_icons/github.png'
+import icon3 from '../../assets/social_icons/datacamp.svg'
 
 const FormPage = () => {
   const [loading, setLoading] = useState(false);
@@ -110,19 +113,19 @@ const FormPage = () => {
             href="https://www.linkedin.com/in/hassen-goumghar-profile23/"
             whileHover={{ scale: 1 }}
           >
-            <img src="/linkedin.png" alt="LinkedIn" />
+            <img src={icon1} alt="LinkedIn" />
           </motion.a>
           <motion.a
             href="https://github.com/HassenGHR"
             whileHover={{ scale: 1 }}
           >
-            <img src="/github.png" alt="GitHub" />
+            <img src={icon2} alt="GitHub" />
           </motion.a>
           <motion.a
             href="https://www.datacamp.com/portfolio/goumhassan"
             whileHover={{ scale: 1 }}
           >
-            <img src="/datacamp.svg" alt="DataCamp" />
+            <img src={icon3} alt="DataCamp" />
           </motion.a>
         </div>
             </div>

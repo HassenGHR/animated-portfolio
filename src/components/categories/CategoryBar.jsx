@@ -16,7 +16,7 @@ import {
   project9,
   project10,
   project11
-} from "../../../public/assets/projects/index";
+} from "../../assets/projects/index";
 
 const items = [
   {
