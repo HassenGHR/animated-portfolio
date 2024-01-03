@@ -1,0 +1,107 @@
+@import "../../app.scss";
+
+// FormPage.scss
+.contact {
+    height: 100vh;
+    padding: 15px;
+    border-radius: 20px;
+  
+    h2 {
+        color: white;
+        font-size: 60px;
+        padding: 6px 2px;
+        font-weight: bold;
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+  
+    .formContainer {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+  
+        label {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 300px;
+  
+            span {
+                color: white;
+                font-weight: medium;
+                margin-bottom: 4px;
+            }
+  
+            input,
+            textarea {
+                background: transparent;
+                padding: 2px 16px;
+                color: white;
+                border: 1px solid white;
+                border-radius: 4px;
+                font-weight: medium;
+                &::placeholder {
+                    color: #a0aec0;
+                }
+            }
+  
+            input {
+                height: 2.5rem;
+            }
+  
+            textarea {
+                height: auto;
+                resize: vertical;
+            }
+        }
+  
+        button {
+            padding: 3px 16px;
+            border-radius: 20px;
+            outline: none;
+            width: fit-content;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 0 2px #114C82, 0 0 0 6px #114C82;
+            transition: box-shadow 0.3s ease;
+  
+            &:hover {
+                box-shadow: 0 0 0 2px #3E77BF, 0 0 0 4px #3E77BF;
+                
+            }
+        }
+        
+
+    }
+    .wrapper {
+        padding-top: 2rem;
+        display: flex;
+    
+        height: 100%;
+        @include mobile {
+        display: none;
+        }
+       
+        .social {
+          display: flex;
+          gap: 20px;
+      
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    
+      
+      
+  
+    @include mobile {
+        padding: 0 16px;
+
+    }
+}

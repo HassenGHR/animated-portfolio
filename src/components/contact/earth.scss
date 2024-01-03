@@ -1,0 +1,22 @@
+// EarthPage.scss
+@import "../../app.scss";
+
+.container {
+    height: 100vh;
+  
+    @include mobile {
+        height: 550px;
+    }
+
+    @include tablet {
+        height: 350px;
+    }
+
+    &.xl\\:flex-1 {
+        flex: 1;
+    }
+
+    &.xl\\:h-auto {
+        height: auto;
+    }
+}

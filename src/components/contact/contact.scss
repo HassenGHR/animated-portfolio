@@ -1,0 +1,49 @@
+@import "../../app.scss";
+
+.formSmall {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows taking equal height */
+  height: 100vh; /* Full height of the viewport */
+}
+.objectSmall {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.wrapper {
+  display: none;
+  @include mobile {
+    justify-content: flex-end;
+    padding: 20px;
+    padding-top: 8rem;
+    display: flex;
+    height: 100%;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.starsContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contactForm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
