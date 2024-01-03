@@ -15,7 +15,8 @@ import {
   project8,
   project9,
   project10,
-  project11
+  project11,
+  project12
 } from "../../assets/projects/index";
 
 const items = [
@@ -79,7 +80,7 @@ const items = [
     id: 8,
     title: "A Telegram Bot",
     demo: "https://t.me/TestStore2383_bot",
-    img: project7,
+    img: project12,
     desc: "AutonavTracker on Telegram serves as a virtual assistant for users seeking information about trackers. Offering details on product features, installation processes, and order tracking, it provides a convenient and informative experience.",
     category: "Python Developer",
   },
@@ -115,10 +116,12 @@ const CategoryBar = ({ onFilterChange }) => {
       const filtered = items.filter((item) => item.category === category);
       setFilteredItems(filtered);
     }
-    window.scrollTo({
-      top: window.scrollY + scrollPosition,
-      behavior: "smooth",
-    });
+    setTimeout(() => {
+      window.scrollTo({
+        top: window.scrollY + scrollPosition,
+        behavior: "smooth",
+      });
+    }, 500); 
   };
 
   return (

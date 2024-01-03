@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import FormPage from "./Form";
-import EarthPage from "./EarthPage";
+// import EarthPage from "./EarthPage";
 import { StarsCanvas } from "../canvas";
 import "./contact.scss";
 import icon1 from '../../assets/social_icons/linkedin.png'
@@ -25,7 +25,7 @@ const Contact = () => {
             <StarsCanvas />
           </div>
           <div className="3dSmall">
-            <EarthPage />
+            {/* <EarthPage /> */}
             <div className="wrapper">
               <motion.span
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -66,7 +66,7 @@ const Contact = () => {
       </div>
       <div className="contactForm">
         <FormPage />
-        <EarthPage />
+        {/* <EarthPage /> */}
       </div>
     </section>
   );

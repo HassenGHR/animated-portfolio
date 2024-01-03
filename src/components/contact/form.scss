@@ -27,7 +27,10 @@
             display: flex;
             flex-direction: column;
             padding: 10px;
-            width: 300px;
+            width: 500px;
+            @media only screen and (max-width: 767px) {
+                width: 300px;
+              }
   
             span {
                 color: white;
